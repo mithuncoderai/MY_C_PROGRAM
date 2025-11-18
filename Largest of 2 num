@@ -1,0 +1,42 @@
+
+#include <stdio.h>
+2	+
+3	+
+int main() {
+4	+
+    int a, b;
+5	+
+6	+
+    printf("Enter first number: ");
+7	+
+    scanf("%d", &a);
+8	+
+9	+
+    printf("Enter second number: ");
+10	+
+    scanf("%d", &b);
+11	+
+12	+
+    if (a > b) {
+13	+
+        printf("%d is the largest number.\n", a);
+14	+
+    }
+15	+
+    else if (b > a) {
+16	+
+        printf("%d is the largest number.\n", b);
+17	+
+    }
+18	+
+    else {
+19	+
+        printf("Both numbers are equal.\n");
+20	+
+    }
+
+21	+
+22	+
+    return 0;
+23	+
+}
