@@ -1,0 +1,40 @@
+
+#include <stdio.h>
+
+2	+
+3	+
+int main() {
+4	+
+    int a, b, gcd, i;
+5	+
+6	+
+    printf("Enter first number: ");
+7	+
+    scanf("%d", &a);
+8	+
+9	+
+    printf("Enter second number: ");
+10	+
+    scanf("%d", &b)
+11	+
+    int min = (a < b) ? a : 
+12	+
+    for (i = min; i >= 1; i--) {
+13	+
+        if (a % i == 0 && b % i == 0) {
+14	+
+            gcd = i;
+15	+
+            break;  
+16	+
+        }
+17	+
+    }
+18	+
+19	+
+    printf("GCD of %d and %d is %d\n", a, b, gcd);
+20	+
+21	+
+    return 0;
+22	+
+}
