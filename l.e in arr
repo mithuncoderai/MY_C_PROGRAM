@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main(){
+    int rows,cols;
+    printf("enter rows &cols\n");
+    scanf("%d%d",&rows,cols);
+    int a[rows][cols],b[rows][cols],c[rows][cols];
+    printf("enter elements of a\n");
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<cols;j++){
+           scanf("%d\n",a[i][j]);
+        }
+    }
+
+    printf("enter element of b\n");
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<cols;j++){
+           scanf("%d\n",b[i][j]);
+        
+        }
+    }
+
+    printf("enter element of c\n");
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<cols;j++){
+           scanf("%d\n",c[i][j]);
+        
+        }
+    }
+}
