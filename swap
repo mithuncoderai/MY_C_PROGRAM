@@ -1,0 +1,21 @@
+#include<stdio.h>
+void swapbalance(float *b1,float *b2){
+    float temp;
+    temp=*b1;
+    *b1=*b2;
+    *b2=temp;
+}
+int main(){
+    float b1, b2;
+    printf("enter balance of  account 1\n");
+    scanf("%f",&b1);
+    printf("enter balance of account 2\n");
+    scanf("%f",&b2);
+    printf("before swaping\n");
+    printf("account 1 balance =%f\n",b1);
+    printf("account 2 balance =%f\n",b2);
+    swapbalance(&balance1,&balance2);
+    printf("after swaping");
+    printf("account 2 balance =%f\n",b1);
+    printf("account 3 balance =%f\n",b2);
+}
