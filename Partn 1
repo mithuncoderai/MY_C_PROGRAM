@@ -1,0 +1,34 @@
+include <stdio.h>
+int main() {
+int n, i, key, low, high, mid;
+printf("Enter number of books: ");  
+scanf("%d", &n);  
+int bookID[n];  
+printf("Enter the Book IDs in ascending order:\n");  
+for (i = 0; i < n; i++) {  
+    scanf("%d", &bookID[i]);  
+}  
+printf("\nEnter Book ID to search: ");  
+scanf("%d", &key);  
+low = 0;  
+high = n - 1;  
+int found = 0;  
+while (low <= high) {  
+    mid = (low + high) / 2;  
+
+    if (bookID[mid] == key) {  
+        found = 1;  
+        break;  
+    }  
+    else if (key < bookID[mid]) {  
+        high = mid - 1;  
+    }  
+    else {  
+        low = mid + 1;  
+    }  
+}  
+if (found)  
+    printf("\nBook ID %d is AVAILABLE in the library.\n", key);  
+else  
+    printf("\nBook ID %d is NOT AVAILABLE in the library.\n", key);  
+}
