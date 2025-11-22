@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int choice;
+   printf("KYC verification\n");
+   printf("Enter the choice(1-5)\n");
+   scanf("%d",&choice);
+   switch(choice){
+       case 1:printf("PAN number\n");
+       printf("PAN verified\n");
+       break;
+        case 2:printf("AADHAR number\n");
+       printf("AADHAR verified\n");
+       break;
+       case 3:printf("APAAR number\n");
+       printf("APAAR verified\n");
+       break;
+        case 4:printf("DRIVING LICENSE number\n");
+       printf("DRIVING LICENSE verified\n");
+       break;
+       case 5:printf("PASSPORT number\n");
+       printf("PASSPORT verified\n");
+       break;
+       deault:
+       printf("NOT VERIFIED");
+   }
+    
+}
