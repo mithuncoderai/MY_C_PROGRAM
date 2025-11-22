@@ -1,0 +1,15 @@
+
+#include <stdio.h>
+struct Book { char title[50], author[50]; int year; };
+int main() {
+    int n, i;
+    printf("Enter number of books: ");
+    scanf("%d", &n);
+    struct Book b[n];
+    for (i = 0; i < n; i++) {
+        scanf(" %[^\n] %[^\n] %d", b[i].title, b[i].author, &b[i].year);
+    }
+    for (i = 0; i < n; i++) {
+        printf("%s - %s - %d\n", b[i].title, b[i].author, b[i].year);
+    }
+}
