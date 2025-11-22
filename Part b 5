@@ -1,0 +1,23 @@
+#include <stdio.h>
+void simulateSwap(float a, float b) {     
+    float temp = a;
+    a = b;
+    b = temp;
+    printf("\nSimulated  A = %.2f , B = %.2f", a, b);
+}
+void realSwap(float *a, float *b) {       
+    float temp = *a;
+    *a = *b;
+    *b = temp;
+}
+int main() {
+    float A, B;
+    printf("Enter Currency A: ");
+    scanf("%f", &A);
+    printf("Enter Currency B: ");
+    scanf("%f", &B);
+    printf("\nOriginal: A = %.2f , B = %.2f", A, B);
+    simulateSwap(A, B);   
+    realSwap(&A, &B);    
+    printf("\n\nAfter Real Swap: A = %.2f , B = %.2f\n", A, B);
+}
