@@ -1,0 +1,21 @@
+#include<stdio.h>
+int passedstudent(int m1,int m2,int m3){
+    if(m1>=40 && m2>=40 && m3>=40){
+    int sub1,sub2,sub3,avg;
+    printf("Enter the marks for sub1 , sub2, sub3\n");
+    scanf("%d%d%d",&sub1,&sub2,&sub3);
+    avg=(sub1+sub2+sub3)/3;
+    printf("the average is: %d\n",avg);
+    if(avg>=40){
+        printf("PASS\n");
+    }
+        else{
+        printf("FAIL\n");
+    }
+    }
+}
+int main()
+{
+    passedstudent(40,40,40
+    );
+}
